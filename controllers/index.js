@@ -2,6 +2,7 @@ const express = require('express');
 const router = new express.Router();
 
 router.use('/pokemon', require('./pokemon'));
+router.use('/trainers', require('./trainers'));
 
 
 router.get('/', function(req, res){
